@@ -8,7 +8,9 @@ function App() {
 
   const addValue = () => {
     if (counter >= 20) return;
-    setCounter(counter + 1);
+    setCounter((prev) => prev + 1);
+    setCounter((prev) => prev + 1);
+    setCounter((prev) => prev + 1);
   };
 
   const removeValue = () => {
